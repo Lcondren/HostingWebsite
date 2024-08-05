@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>South East Hotels</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: black;
+        color: #fff;
+        padding: 1% 0;
+        font-size: 1.2em;
+        border: 0;
+      }
+      .navbar-brand {
+        float: left;
+        min-height: 40px;
+        padding: 0 15px 5px;
+      }
+      .navbar-inverse .navbar-nav .active a,
+      .navbar-inverse .navbar-nav .active a:focus,
+      .navbar-inverse .navbar-nav .active a:hover {
+        color: FFF;
+        background-color: #1f71da;
+      }
+      .card {
+        padding: 10px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img src="img/south-east-ireland.jpg" height="65"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Services</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid bg">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card left" style="width: 18rem">
+                <img
+                  src="img/SouthEast Ireland.jpg"
+                  height="100"
+                  width="200"
+                  class="card-img-top"
+                  alt="Southeast Ireland"
+                />
+                <div class="card-body">
+                  <h5 class="card-title" id="title">South East Hotels</h5>
+                  <p class="card-text" id="ct">
+                    Relax, de-stress and completely escape from the life's
+                    worries in the luxurious sunny south east of Ireland this Summer, you will surely not be disappointed 
+					between the greenway in Waterford to the sea adventures in Fethard on Sea.                    
+                  </p>
+                  <a href="#" class="btn btn-primary" onclick="order()"
+                    >Select</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="img/HHA-2.jpg"
+                  height="100"
+                  width="200"
+                  class="card-img-top"
+                  alt="Adventures at Sea"
+                />
+                <div class="card-body">
+                  <h5 class="card-title" id="title1">Adventures at Sea</h5>
+                  <p class="card-text" id="ct1">
+                    Experience the adventures at Sea in the South East.
+					We have adventures from Kayaking, rowing and Surfing
+                  </p>
+                  <a href="#" class="btn btn-primary" onclick="order1()"
+                    >Select</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          
+                <div class="card-body">
+                  <h5 class="card-title" id="title2">Green-Way in the Sunny South-East</h5>
+                  <p class="card-text" id="ct2">
+                    Ever wanted to find a great way to exercise but also enjoy the moment while cycling through the amazing views from Waterford City 
+					to Dungarvan and back, while also enjoying a nice break in the restuarants along the way
+                  </p>
+                  <a href="#" class="btn btn-primary" onclick="order2()"
+                    >Select</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="img/Waterford Greenway.jpg"
+                  height="100"
+                  width="200"
+                  class="card-img-top"
+                  alt="Waterford Greenway"
+                />
+                <div class="card-body">
+                  <h5 class="card-title" id="title3">Green-Way in the Sunny South-East</h5>
+                  <p class="card-text" id="ct3">
+                   Ever wanted to find a great way to exercise but also enjoy the moment while cycling through the amazing views from Waterford City 
+					to Dungarvan and back, while also enjoying a nice break in the restuarants along the way
+                  </p>
+                  <a href="#" class="btn btn-primary" onclick="order3()"
+                    >Select</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document.getElementById('title').style.color = 'blue';
+    document.getElementById('title1').style.color = 'blue';
+    document.getElementById('title2').style.color = 'blue';
+    document.getElementById('title3').style.color = 'blue';
+
+    document.getElementById('ct').style.color = 'white';
+    document.getElementById('ct1').style.color = 'white';
+    document.getElementById('ct2').style.color = 'white';
+    document.getElementById('ct3').style.color = 'white';
+
+    var dmServices = [
+      'South East Hotels',
+      'Adventures at Sea',
+      'Green-Way in the Sunny South-East',
+      'Everest Base Camp',
+    ];
+    var price = 150;
+	var price1 = 75;
+	var price2 = 60;
+	
+
+    function order() {
+      alert(dmServices[0] + ':' + ' ' + '€' + price);
+    }
+    function order1() {
+      alert(dmServices[1] + ':' + ' ' + '€' + price1);
+    }
+    function order2() {
+      alert(dmServices[2] + ':' + ' ' + '€' + price2);
+    }
+    function order3() {
+      alert(dmServices[3] + ':' + ' ' + '€' + price2);
+    }
+  </script>
+</html>
